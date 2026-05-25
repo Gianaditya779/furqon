@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Love ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- PASSWORD GATE -->
+    <div class="password-gate" id="passwordGate">
+        <div class="password-background">
+            <div class="floating-particles" id="passwordParticles"></div>
+        </div>
+        <div class="password-container">
+            <div class="password-card">
+                <div class="password-header">
+                    <div class="heart-icon">❤️</div>
+                    <h1 class="password-title">Only You Can Enter</h1>
+                    <p class="password-subtitle">Enter the secret password.</p>
+                    <p class="password-hint">Hint: our special date ❤️</p>
+                </div>
+                <div class="password-input-group">
+                    <input type="password" id="passwordInput" class="password-input" placeholder="Enter password..." maxlength="10">
+                    <button id="unlockBtn" class="unlock-btn">Unlock My Heart</button>
+                </div>
+                <div class="password-message" id="passwordMessage"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content" id="mainContent" style="display: none;">
+        <!-- HERO SECTION -->
+        <section class="hero" id="hero">
+            <div class="hero-background">
+                <div class="stars-container" id="starsContainer"></div>
+                <div class="floating-hearts" id="floatingHeartsHero"></div>
+                <div class="hero-glow"></div>
+            </div>
+            
+            <div class="hero-content">
+                <h1 class="hero-title">Happy Birthday<br><span class="gradient-text">My Love</span> ❤️</h1>
+                <p class="hero-subtitle">I made this little world for you.</p>
+                <button class="btn-primary" id="openHeartBtn">Open My Heart</button>
+            </div>
+        </section>
+
+        <!-- TIMELINE SECTION -->
+        <section class="timeline-section" id="timelineSection">
+            <h2 class="section-title">Our Story</h2>
+            <div class="timeline-container">
+                <div class="timeline-item" data-index="0">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-date">The Day We Met</div>
+                        <h3 class="timeline-title">First Sight</h3>
+                        <p class="timeline-text">The moment you entered my world, everything changed. Like the universe conspired to bring us together. My heart knew before my mind could catch up.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-index="1">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-date">Late Night Hours</div>
+                        <h3 class="timeline-title">First Words</h3>
+                        <p class="timeline-text">Our conversations became my favorite part of the day. Hours would pass like minutes when I was talking to you. You made me feel understood in ways I never thought possible.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-index="2">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-date">Our First Call</div>
+                        <h3 class="timeline-title">Hearing Your Voice</h3>
+                        <p class="timeline-text">The sound of your voice became my favorite melody. I could listen to you forever and never get tired. Every laugh, every word, everything about you is perfect.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-index="3">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-date">That Special Night</div>
+                        <h3 class="timeline-title">First Date</h3>
+                        <p class="timeline-text">Finally being with you in person was like a dream coming true. Every moment felt cinematic, every touch electric. You exceeded every expectation I ever had.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-index="4">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-date">Our Favorite Memory</div>
+                        <h3 class="timeline-title">That Beautiful Moment</h3>
+                        <p class="timeline-text">When you held me under the stars and whispered those three words... time stopped. That moment became my safe place, my sanctuary. Forever grateful for that night.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-index="5">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-card special-card">
+                        <div class="timeline-date">Today</div>
+                        <h3 class="timeline-title">Happy Birthday, My Love</h3>
+                        <p class="timeline-text">Another year around the sun, and I'm thankful for every single day with you. You make my life complete. Happy birthday to the person who owns my heart completely.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOVE LETTER SECTION -->
+        <section class="letter-section" id="letterSection">
+            <div class="letter-container">
+                <div class="letter-header">
+                    <div class="letter-seal">💌</div>
+                    <h2 class="letter-title">A Love Letter For You</h2>
+                </div>
+                
+                <div class="letter-content">
+                    <p class="letter-text" id="letterText"></p>
+                </div>
+
+                <div class="letter-signature">
+                    <p style="font-family: 'Dancing Script', cursive; font-size: 2rem; margin: 2rem 0 0 0;">Forever yours,</p>
+                    <p style="font-size: 1.1rem; font-weight: 300; letter-spacing: 2px; margin-top: 0.5rem;">Your Love</p>
+                </div>
+
+                <div class="floating-hearts" id="floatingHeartsLetter"></div>
+            </div>
+        </section>
+
+        <!-- MEMORY GALLERY -->
+        <section class="gallery-section" id="gallerySection">
+            <h2 class="section-title">Our Memories</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" style="background-image: url('images/foto1.jpeg')">
+                    <div class="gallery-overlay"></div>
+                </div>
+                <div class="gallery-item" style="background-image: url('images/foto2.jpeg')">
+                    <div class="gallery-overlay"></div>
+                </div>
+                <div class="gallery-item" style="background-image: url('images/foto3.jpeg')">
+                    <div class="gallery-overlay"></div>
+                </div>
+                <div class="gallery-item" style="background-image: url('images/foto4.jpeg')">
+                    <div class="gallery-overlay"></div>
+                </div>
+                <div class="gallery-item" style="background-image: url('images/foto5.jpeg')">
+                    <div class="gallery-overlay"></div>
+                </div>
+                <div class="gallery-item" style="background-image: url('images/foto6.jpeg')">
+                    <div class="gallery-overlay"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY I LOVE YOU SECTION -->
+        <section class="reasons-section" id="reasonsSection">
+            <h2 class="section-title">Why I Love You</h2>
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <div class="reason-icon">✨</div>
+                    <h3>Your Smile</h3>
+                    <p>The way your eyes light up makes the whole world brighter. It's contagious, and I could stare at it forever.</p>
+                </div>
+
+                <div class="reason-card">
+                    <div class="reason-icon">💭</div>
+                    <h3>Your Mind</h3>
+                    <p>The way you think, the dreams you have, the passion you carry. You inspire me to be a better version of myself every day.</p>
+                </div>
+
+                <div class="reason-card">
+                    <div class="reason-icon">💪</div>
+                    <h3>Your Strength</h3>
+                    <p>How you handle life's challenges with grace and courage. Your resilience is admirable and makes me want to be stronger.</p>
+                </div>
+
+                <div class="reason-card">
+                    <div class="reason-icon">❤️</div>
+                    <h3>Your Heart</h3>
+                    <p>Your kindness and compassion for others shows the beautiful soul you are. You make the world a better place just by existing.</p>
+                </div>
+
+                <div class="reason-card">
+                    <div class="reason-icon">🌟</div>
+                    <h3>Your Presence</h3>
+                    <p>
+You
+Yes you, the one who always makes me smile everyday without any effort, the one who always makes me miss the presence of someone being on my side.</p>
+                </div>
+
+                <div class="reason-card">
+                    <div class="reason-icon">🎵</div>
+                    <h3>Your Laugh</h3>
+                    <p>The sound of your laughter is my favorite song. It's pure joy, and it reminds me why life is beautiful.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MINI GAMES SECTION -->
+        <section class="games-section" id="gamesSection">
+            <h2 class="section-title">Our Little Games ❤️</h2>
+
+            <!-- GAME 1: CATCH THE HEART -->
+            <div class="game-card">
+                <h3 class="game-title">Catch The Heart</h3>
+                <p class="game-description">Tap the floating hearts before they disappear!</p>
+                <div class="game-area" id="catchGameArea">
+                    <div class="game-ui">
+                        <div class="score-display">Score: <span id="catchScore">0</span></div>
+                        <div class="timer-display">Time: <span id="catchTimer">30</span>s</div>
+                    </div>
+                    <button class="game-btn" id="startCatchGame">Start Game</button>
+                </div>
+            </div>
+
+            <!-- GAME 2: LOVE QUIZ -->
+            <div class="game-card">
+                <h3 class="game-title">Love Quiz</h3>
+                <p class="game-description">Answer these cute questions about us!</p>
+                <div class="quiz-container" id="quizContainer">
+                    <div class="quiz-question" id="quizQuestion"></div>
+                    <div class="quiz-options" id="quizOptions"></div>
+                    <div class="quiz-progress">Question <span id="currentQuestion">1</span> of <span id="totalQuestions">5</span></div>
+                </div>
+                <button class="game-btn" id="startQuiz">Start Quiz</button>
+            </div>
+
+            <!-- GAME 3: MEMORY PUZZLE -->
+            <div class="game-card">
+                <h3 class="game-title">Memory Puzzle</h3>
+                <p class="game-description">Complete the puzzle of our special memory!</p>
+                <div class="puzzle-container" id="puzzleContainer">
+                    <div class="puzzle-board" id="puzzleBoard"></div>
+                    <div class="puzzle-pieces" id="puzzlePieces"></div>
+                </div>
+                <button class="game-btn" id="startPuzzle">Start Puzzle</button>
+            </div>
+        </section>
+
+        <!-- RELATIONSHIP COUNTER -->
+        <section class="counter-section" id="counterSection">
+            <h2 class="section-title">Together</h2>
+            <div class="counter-container">
+                <div class="counter-box">
+                    <div class="counter-number" id="counterDays">0</div>
+                    <div class="counter-label">Days</div>
+                </div>
+                <div class="counter-divider">:</div>
+                <div class="counter-box">
+                    <div class="counter-number" id="counterHours">0</div>
+                    <div class="counter-label">Hours</div>
+                </div>
+                <div class="counter-divider">:</div>
+                <div class="counter-box">
+                    <div class="counter-number" id="counterMinutes">0</div>
+                    <div class="counter-label">Minutes</div>
+                </div>
+            </div>
+            <p class="counter-text">❤️ And counting every precious moment ❤️</p>
+        </section>
+
+        <!-- SECRET MESSAGE -->
+        <section class="secret-section" id="secretSection">
+            <h2 class="section-title">Find Our Secret</h2>
+            <div class="secret-stars" id="secretStars">
+                <span class="secret-star">⭐</span>
+                <span class="secret-star">⭐</span>
+                <span class="secret-star">⭐</span>
+                <span class="secret-star">⭐</span>
+                <span class="secret-star">⭐</span>
+            </div>
+            <p class="secret-hint">Click a star to reveal a secret message ✨</p>
+        </section>
+
+        <!-- MODAL FOR SECRET MESSAGE -->
+        <div class="modal" id="secretModal">
+            <div class="modal-content">
+                <button class="modal-close" id="modalClose">×</button>
+                <div class="modal-heart">💝</div>
+                <p class="modal-text" id="modalText"></p>
+            </div>
+        </div>
+
+        <!-- FINAL CINEMATIC SECTION -->
+        <section class="finale-section" id="finaleSection">
+            <div class="finale-background">
+                <div class="fireworks-container" id="fireworksContainer"></div>
+                <div class="finale-overlay"></div>
+            </div>
+            
+            <div class="finale-content">
+                <h2 class="finale-title">Thank You For Existing ❤️</h2>
+                <p class="finale-text">You are my favorite chapter in life.</p>
+                <p class="finale-subtitle">And every day with you is a blessing.</p>
+            </div>
+        </section>
+
+        <!-- MUSIC PLAYER -->
+        <div class="music-player" id="musicPlayer">
+            <div class="player-album">
+                <div class="album-art"></div>
+            </div>
+            <div class="player-controls">
+                <button class="player-btn" id="playBtn">▶</button>
+            </div>
+            <div class="player-glow"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
